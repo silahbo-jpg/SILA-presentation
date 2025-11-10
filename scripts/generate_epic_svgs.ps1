@@ -89,12 +89,10 @@ if ($Compress) {
     }
 }
 
-# Render via WSL
+# Render via PowerShell (with inkscape/magick fallback)
 if ($Render) {
-    Log '[RENDER] Invoking render_all.sh...'
-    if (-not $DryRun) {
-        wsl bash -lc "cd /home/truman/dev/sila-showcase/SILA-presentation && SHORT_RUN=1 ./scripts/render_all.sh epic"
-    }
+    Log '[RENDER] Invoking render_all.ps1...'
+    & "$PSScriptRoot/render_all.ps1" -FrameDir $FrameDir -DryRun:$DryRun -Verbose:$Verbose
 }
 
 Log '=== RUN COMPLETE ==='

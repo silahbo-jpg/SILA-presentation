@@ -4,9 +4,13 @@
   "description": "Utilities to generate and export SILA presentation assets (video prompt automation, export to MP4)",
   "type": "module",
   "scripts": {
-    "generate-video": "node generate_video.js",
-    "export-frames": "node puppeteer_export.js",
-    "check-env": "node scripts/check_env.js"
+    "generate-video": "node ./generate_video.js",
+    "generate-video:short": "SHORT_RUN=1 node ./generate_video.js",
+    "video": "node ./generate_video.js epic",
+    "video:short": "SHORT_RUN=1 node ./generate_video.js epic",
+    "export-frames": "node ./puppeteer_export.js",
+    "check-env": "node ./scripts/check_env.js",
+    "ci:video": "SHORT_RUN=1 node ./generate_video.js epic"
   },
   "dependencies": {
     "dotenv": "^16.6.1",

@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [ '**' ]
+  pull_request:
+    branches: [ '**' ]
+
+jobs:
+  smoke-linux:
+    name: Smoke tests (Linux)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install shellcheck
+        run: |
+          sudo apt-get update && sudo apt-get install -y shellcheck
+      - name: Lint shell scripts
+        run: |
+          shellcheck -x scripts/*.sh scripts/**/*.sh || true
+      - name: Make tests executable
+        run: |
+          chmod +x ./scripts/tests/smoke.sh || true
+      - name: Run bash smoke test
+        run: |
+          ./scripts/tests/smoke.sh
+
+  smoke-windows:
+    name: Smoke tests (Windows)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PSScriptAnalyzer
+        shell: pwsh
+        run: |
+          Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser
+      - name: Lint PowerShell scripts
+        shell: pwsh
+        run: |
+          Invoke-ScriptAnalyzer -Path ./scripts -Recurse -Severity Warning || true
+      - name: Run PowerShell smoke test
+        shell: pwsh
+        run: |
+          Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+          ./scripts/tests/smoke.ps1
