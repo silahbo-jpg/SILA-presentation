@@ -1,0 +1,21 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#000000"/>
+
+  <!-- Animated HUD blocks -->
+  <rect x="50" y="50" width="1820" height="200" fill="#FFD700" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="50" y="800" width="1820" height="200" fill="#FF0000" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Overlay text with fade -->
+  <text x="50%" y="150" font-size="60" fill="#FFFFFF" text-anchor="middle">
+    Integração de Serviços Digitais
+    <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite"/>
+  </text>
+  <text x="50%" y="900" font-size="60" fill="#FFFFFF" text-anchor="middle">
+    Plataforma SILA - Crescimento Sustentável
+    <animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite"/>
+  </text>
+</svg>

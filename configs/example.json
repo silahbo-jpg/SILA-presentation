@@ -1,0 +1,20 @@
+{
+  "fps": 30,
+  "viewport": {
+    "width": 1080,
+    "height": 1080
+  },
+  "audio": "example.wav",
+  "slides": [
+    {
+      "id": "intro",
+      "src": "frames/example/slide1.svg",
+      "duration": 3
+    },
+    {
+      "id": "beneficios",
+      "src": "frames/example/slide2.svg",
+      "duration": 4
+    }
+  ]
+}

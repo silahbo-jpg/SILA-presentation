@@ -1,0 +1,10 @@
+{
+  "model": "runway-gen2",
+  "resolution": "1920x1080",
+  "fps": 60,
+  "duration": 15,
+  "prompt": "Cinematic cyberpunk holographic map of Angola, glowing neon blue circuits, government tech, dark interface, data visualization, particles, HUD UI, smooth camera zoom in, volumetric lights, premium high-tech mood, 16:9, 4K details",
+  "camera": "slow zoom + parallax motion",
+  "style": "dark gov-tech, neon blue, premium minimalism",
+  "negativePrompt": "text, words, logos, people, faces, buildings"
+}

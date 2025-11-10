@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Frame 1: Fade in particles -> outline of Angola -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#00eaff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#006b8f" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#02040a"/>
+  <!-- subtle grid -->
+  <g opacity="0.06">
+    <rect x="0" y="0" width="1920" height="1080" fill="url(#g1)"/>
+  </g>
+  <!-- particles -->
+  <g>
+    <circle cx="300" cy="200" r="2.4" fill="#00eaff" opacity="0.7"/>
+    <circle cx="500" cy="320" r="1.6" fill="#00eaff" opacity="0.45"/>
+    <circle cx="1100" cy="180" r="1.8" fill="#00eaff" opacity="0.5"/>
+    <circle cx="1500" cy="400" r="2.2" fill="#00eaff" opacity="0.6"/>
+  </g>
+  <!-- stylized Angola outline (abstract) -->
+  <g transform="translate(300,160) scale(0.85)" filter="url(#glow)">
+    <path d="M420 120 C410 100 380 85 350 80 C320 75 280 78 260 90 C240 102 220 120 200 130 C180 140 160 150 150 170 C140 190 135 215 140 240 C145 265 160 290 180 310 C200 330 230 345 255 360 C280 375 300 395 320 420 C340 445 360 470 380 495 C400 520 420 540 450 540 C480 540 515 520 540 500 C565 480 585 450 600 420 C615 390 620 355 610 330 C600 305 580 285 560 270 C540 255 520 245 500 230 C480 215 460 200 440 180 C430 160 425 140 420 120 Z" fill="none" stroke="#00eaff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <!-- title -->
+  <g transform="translate(90,820)">
+    <text x="0" y="0" fill="#00eaff" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="700" opacity="0.95">Angola — Mapa digital</text>
+    <text x="0" y="44" fill="#8fefff" font-family="Inter, Arial, sans-serif" font-size="20" opacity="0.7">Rede neural de dados · GOV-Tech · Neon azul</text>
+  </g>
+</svg>

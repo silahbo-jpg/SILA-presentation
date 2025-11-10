@@ -1,0 +1,106 @@
+[2025-11-10T05:00:25Z] START generate_epic_svgs.sh args: 
+[2025-11-10T05:00:25Z] DRY-RUN enabled
+[0;32m[SILA][0m Iniciando gerador de SVGs SILA - Modo EPIC
+[0;32m[SILA][0m Criando backup em /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060025
+[0;32m[SILA][0m (dry-run) Would create dir: /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060025
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060025/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_02_circuits.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060025/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_03_hud_overlays.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060025/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_04_focus_luanda.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060025/
+[0;32m[SILA][0m Compactando backup em /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060025.tar.gz
+[0;32m[SILA][0m (dry-run) Would tar -czf /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060025.tar.gz -C /home/truman/dev/sila-showcase/SILA-presentation/backup/epic 20251110_060025
+[0;32m[SILA][0m Backup concluído: /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060025
+[0;32m[SILA][0m Gerando SVGs padrão em /home/truman/dev/sila-showcase/SILA-presentation/frames/epic
+[0;32m[SILA][0m SVG criado: frame_04_focus_luanda.svg
+[0;32m[SILA][0m SVG criado: frame_02_circuits.svg
+[0;32m[SILA][0m SVG criado: frame_03_hud_overlays.svg
+[0;32m[SILA][0m SVG criado: frame_01_angola_map.svg
+[0;32m[SILA][0m Processando /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg
+[0;32m[SILA][0m (dry-run) Would render /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg -> /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.png
+[2025-11-10T05:00:46Z] START generate_epic_svgs.sh args: 
+[2025-11-10T05:00:46Z] DRY-RUN enabled
+[0;32m[SILA][0m Iniciando gerador de SVGs SILA - Modo EPIC
+[0;32m[SILA][0m Criando backup em /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060046
+[0;32m[SILA][0m (dry-run) Would create dir: /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060046
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060046/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_02_circuits.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060046/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_03_hud_overlays.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060046/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_04_focus_luanda.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060046/
+[0;32m[SILA][0m Compactando backup em /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060046.tar.gz
+[0;32m[SILA][0m (dry-run) Would tar -czf /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060046.tar.gz -C /home/truman/dev/sila-showcase/SILA-presentation/backup/epic 20251110_060046
+[0;32m[SILA][0m Backup concluído: /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060046
+[0;32m[SILA][0m Gerando SVGs padrão em /home/truman/dev/sila-showcase/SILA-presentation/frames/epic
+[0;32m[SILA][0m SVG criado: frame_04_focus_luanda.svg
+[0;32m[SILA][0m SVG criado: frame_02_circuits.svg
+[0;32m[SILA][0m SVG criado: frame_03_hud_overlays.svg
+[0;32m[SILA][0m SVG criado: frame_01_angola_map.svg
+[0;32m[SILA][0m Processando /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg
+[0;32m[SILA][0m (dry-run) Would render /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg -> /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.png
+[2025-11-10T05:01:19Z] START generate_epic_svgs.sh args: 
+[2025-11-10T05:01:19Z] DRY-RUN enabled
+[0;32m[SILA][0m Iniciando gerador de SVGs SILA - Modo EPIC
+[0;32m[SILA][0m Criando backup em /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060119
+[0;32m[SILA][0m (dry-run) Would create dir: /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060119
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060119/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_02_circuits.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060119/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_03_hud_overlays.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060119/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_04_focus_luanda.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060119/
+[0;32m[SILA][0m Compactando backup em /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060119.tar.gz
+[0;32m[SILA][0m (dry-run) Would tar -czf /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060119.tar.gz -C /home/truman/dev/sila-showcase/SILA-presentation/backup/epic 20251110_060119
+[0;32m[SILA][0m Backup concluído: /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060119
+[0;32m[SILA][0m Gerando SVGs padrão em /home/truman/dev/sila-showcase/SILA-presentation/frames/epic
+[0;32m[SILA][0m SVG criado: frame_04_focus_luanda.svg
+[0;32m[SILA][0m SVG criado: frame_02_circuits.svg
+[0;32m[SILA][0m SVG criado: frame_03_hud_overlays.svg
+[0;32m[SILA][0m SVG criado: frame_01_angola_map.svg
+[0;32m[SILA][0m Processando /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg
+[0;32m[SILA][0m (dry-run) Would render /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg -> /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.png
+[2025-11-10T05:01:55Z] START generate_epic_svgs.sh args: 
+[2025-11-10T05:01:55Z] DRY-RUN enabled
+[0;32m[SILA][0m Iniciando gerador de SVGs SILA - Modo EPIC
+[0;32m[SILA][0m Criando backup em /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060155
+[0;32m[SILA][0m (dry-run) Would create dir: /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060155
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060155/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_02_circuits.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060155/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_03_hud_overlays.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060155/
+[0;32m[SILA][0m (dry-run) Would copy /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_04_focus_luanda.svg -> /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060155/
+[0;32m[SILA][0m Compactando backup em /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060155.tar.gz
+[0;32m[SILA][0m (dry-run) Would tar -czf /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060155.tar.gz -C /home/truman/dev/sila-showcase/SILA-presentation/backup/epic 20251110_060155
+[0;32m[SILA][0m Backup concluído: /home/truman/dev/sila-showcase/SILA-presentation/backup/epic/20251110_060155
+[0;32m[SILA][0m Gerando SVGs padrão em /home/truman/dev/sila-showcase/SILA-presentation/frames/epic
+[0;32m[SILA][0m SVG criado: frame_04_focus_luanda.svg
+[0;32m[SILA][0m SVG criado: frame_02_circuits.svg
+[0;32m[SILA][0m SVG criado: frame_03_hud_overlays.svg
+[0;32m[SILA][0m SVG criado: frame_01_angola_map.svg
+[0;32m[SILA][0m Processando /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg
+[0;32m[SILA][0m (dry-run) Would render /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.svg -> /home/truman/dev/sila-showcase/SILA-presentation/frames/epic/frame_01_angola_map.png
+[2025-11-10T06:04:06.9355248+01:00] START generate_epic_svgs.ps1 args: Compress=True Keep=1 Render=True DryRun=True Retries=2
+[2025-11-10T06:04:07.0611276+01:00] Backup detectado — movendo ficheiros para \\wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\backup\epic\20251110_060406
+[2025-11-10T06:04:07.0865788+01:00] (dry-run) Would create \\wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\backup\epic\20251110_060406 and move 4 files
+[2025-11-10T06:11:10.6183602+01:00] START generate_epic_svgs.ps1 args: Compress=True Keep=1 Render=True DryRun=True Retries=2
+[2025-11-10T06:11:10.7158063+01:00] Backup detectado — movendo ficheiros para \\wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\backup\epic\20251110_061110
+[2025-11-10T06:11:10.7449301+01:00] (dry-run) Would create \\wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\backup\epic\20251110_061110 and move 4 files
+[2025-11-10T06:11:10.7666760+01:00] Gerando SVGs…
+[2025-11-10T06:11:10.8415543+01:00] SVG criado: frame_02_circuits.svg
+[2025-11-10T06:11:10.8751195+01:00] SVG criado: frame_03_hud_overlays.svg
+[2025-11-10T06:11:10.9164759+01:00] SVG criado: frame_01_angola_map.svg
+[2025-11-10T06:11:10.9548992+01:00] SVG criado: frame_04_focus_luanda.svg
+[2025-11-10T06:11:10.9780277+01:00] Compactando backup…
+[2025-11-10T06:11:11.0026136+01:00] ERROR: Diretório de backup não existe: \\wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\backup\epic\20251110_061110
+[2025-11-10T06:11:50.2411132+01:00] START generate_epic_svgs.ps1 args: Compress=True Keep=1 Render=True DryRun=True Retries=2
+[2025-11-10T06:11:50.3348710+01:00] Backup detectado — movendo ficheiros para \\wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\backup\epic\20251110_061150
+[2025-11-10T06:11:50.3552294+01:00] (dry-run) Would create \\wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\backup\epic\20251110_061150 and move 4 files
+[2025-11-10T06:11:50.3749858+01:00] Gerando SVGs…
+[2025-11-10T06:11:50.4375094+01:00] SVG criado: frame_03_hud_overlays.svg
+[2025-11-10T06:11:50.4719704+01:00] SVG criado: frame_01_angola_map.svg
+[2025-11-10T06:11:50.5110639+01:00] SVG criado: frame_02_circuits.svg
+[2025-11-10T06:11:50.5517546+01:00] SVG criado: frame_04_focus_luanda.svg
+[2025-11-10T06:11:50.5712449+01:00] Compactando backup…
+[2025-11-10T06:11:50.5909751+01:00] (dry-run) Would create archive \\wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\backup\epic\20251110_061150.zip
+[2025-11-10T06:11:50.6120236+01:00] Aplicando política de retenção (keep 1 backups)
+[2025-11-10T06:11:50.7081522+01:00] Removido backup: 20251110_053503.tar.gz
+[2025-11-10T06:11:50.7253079+01:00] Iniciando renderização 🎬
+[2025-11-10T06:11:50.8219371+01:00] WARN: Command not found: inkscape
+[2025-11-10T06:11:50.9089410+01:00] WARN: Command not found: magick
+[2025-11-10T06:11:50.9488823+01:00] WARN: Render script não encontrado: \\wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\scripts\\render_all.ps1
+[2025-11-10T06:11:50.9693226+01:00] 🏁 Processo concluído com sucesso.

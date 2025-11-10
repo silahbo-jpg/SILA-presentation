@@ -1,0 +1,62 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "🎬 SILA: Gerar Vídeo Institucional",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/render_all.sh",
+            "args": [
+                "${input:presentationName}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "🎤 SILA: Gerar Narração",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/generate_audio_elevenlabs.sh",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "✨ SILA: Pipeline Completo (Áudio + Vídeo)",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "🎤 SILA: Gerar Narração",
+                "🎬 SILA: Gerar Vídeo Institucional"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "presentationName",
+            "type": "pickString",
+            "description": "Qual apresentação gerar?",
+            "options": [
+                "mat-2023",
+                "casacivil-2023",
+                "default"
+            ]
+        }
+    ]
+}

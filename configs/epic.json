@@ -1,0 +1,46 @@
+{
+  "name": "SILA System - Epic Presentation",
+  "settings": {
+    "viewport": { "width": 1920, "height": 1080 },
+    "fps": 30,
+    "output_dir": "output/epic",
+    "background_color": "#FFFFFF",
+    "totalDuration": 60
+  },
+  "scenes": [
+    {
+      "id": "intro_map",
+      "svg_source": "frames/epic/frame_01_angola_map.svg",
+      "duration_frames": 90,
+      "overlay_text": "SILA System | Análise Geoespacial de Angola",
+      "action": "load_svg"
+    },
+    {
+      "id": "data_circuits",
+      "svg_source": "frames/epic/frame_02_circuits.svg",
+      "duration_frames": 120,
+      "overlay_text": "Orquestração de Dados Críticos",
+      "dynamic_updates": [
+        {"selector": "#subtitle", "content": "Tempo Real e Segurança da Informação"}
+      ],
+      "action": "transition_fade"
+    },
+    {
+      "id": "hud_overlays",
+      "svg_source": "frames/epic/frame_03_hud_overlays.svg",
+      "duration_frames": 90,
+      "overlay_text": "Integração de Serviços Digitais",
+      "action": "overlay_info"
+    },
+    {
+      "id": "luanda_focus",
+      "svg_source": "frames/epic/frame_04_focus_luanda.svg",
+      "duration_frames": 120,
+      "overlay_text": "Missão Cumprida",
+      "style_updates": [
+        {"selector": "#luanda-area", "style": "fill: #00FFC0; opacity: 0.8; transition: opacity 0.5s;"}
+      ],
+      "action": "highlight"
+    }
+  ]
+}

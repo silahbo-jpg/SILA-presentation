@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SILA – Soberania Tecnológica de Angola</title>
+
+<!-- Fonte -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<style>
+/* ------------------- GLOBAL ------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #02040a;
+  color: #e7e7e7;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 4, 10, 0.75);
+  z-index: -1;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #00eaff;
+  letter-spacing: -1px;
+  text-shadow: 0 0 20px rgba(0, 234, 255, 0.5);
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 900px;
+  opacity: 0.85;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 40px;
+  padding: 14px 34px;
+  background: #00eaff;
+  color: #000;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s ease;
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.3);
+}
+
+button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 30px rgba(0, 234, 255, 0.5);
+}
+
+/* cyber grid */
+.cyber-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, #003f4f 1px, transparent 1px);
+  background-size: 70px 70px;
+  opacity: 0.08;
+  z-index: -1;
+}
+
+/* scanline effect */
+.scanline {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.03),
+    rgba(255,255,255,0.03) 2px,
+    transparent 3px,
+    transparent 6px
+  );
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* cards */
+.card-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  padding: 24px;
+  background: rgba(0, 234, 255, 0.08);
+  border: 1px solid rgba(0, 234, 255, 0.2);
+  border-radius: 10px;
+  width: 270px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 14px rgba(0, 234, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 234, 255, 0.3);
+}
+
+.card h2 {
+  color: #00eaff;
+  margin-bottom: 10px;
+}
+
+/* Logo styles */
+.logo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 120px;
+  opacity: 0.8;
+  z-index: 4;
+}
+
+/* Particles */
+.particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+</style>
+</head>
+<body>
+
+<div class="video-background">
+  <video autoplay loop muted playsinline>
+    <source src="background.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="overlay"></div>
+<div class="cyber-grid"></div>
+<div class="scanline"></div>
+<canvas class="particles" id="particlesCanvas"></canvas>
+
+<!-- SLIDE 1 -->
+<section class="slide" id="slide1">
+  <h1>SILA-System</h1>
+  <p>Sistema Integrado Local de Administração</p>
+  <p style="font-size: 1rem; margin-top: 10px; opacity: 0.7">Soberania Tecnológica de Angola</p>
+  <button onclick="nextSlide()">Continuar</button>
+</section>
+
+<!-- SLIDE 2 -->
+<section class="slide" id="slide2">
+  <h1>Mentoria & Visão</h1>
+  <p>
+    Sob a mentoria do Eng.º <strong>Marcelo Truman</strong> — profissional de tecnologia, filosofia e políticas públicas,
+    com histórico na Força Aérea Nacional e no Ministério do Interior — o projeto nasce com
+    propósito de transformar a inovação em soberania tecnológica do Estado Angolano.
+  </p>
+  <button onclick="nextSlide()">Próximo</button>
+</section>
+
+<!-- SLIDE 3 -->
+<section class="slide" id="slide3">
+  <h1>O Ecossistema</h1>
+  <div class="card-container">
+    <div class="card">
+      <h2>SIRA</h2>
+      <p>Rastreabilidade de armamento em tempo real.</p>
+    </div>
+    <div class="card">
+      <h2>SIGP</h2>
+      <p>Gestão penitenciária integrada aos tribunais.</p>
+    </div>
+    <div class="card">
+      <h2>JUSTIÇA 360°</h2>
+      <p>Interoperabilidade e inteligência judicial.</p>
+    </div>
+  </div>
+  <button onclick="nextSlide()">Ver impacto</button>
+</section>
+
+<!-- SLIDE 4 -->
+<section class="slide" id="slide4">
+  <h1>Impacto para o Estado & Cidadão</h1>
+  <p>
+    Digitalização real, redução de custos, rastreabilidade e autonomia tecnológica.
+    Inovação com propósito.
+  </p>
+  <button onclick="nextSlide()">Finalizar</button>
+</section>
+
+<!-- SLIDE 5 -->
+<section class="slide" id="slide5">
+  <h1>WTMEDIA</h1>
+  <p>Construindo uma Angola tecnologicamente soberana.</p>
+  <button onclick="restart()">Reiniciar apresentação</button>
+</section>
+
+<img src="wtmedia-logo.png" alt="WTMEDIA" class="logo">
+
+<script>
+// Slide control
+let currentSlide = 1;
+showSlide(currentSlide);
+
+function showSlide(n) {
+  document.querySelectorAll(".slide").forEach(s => {
+    gsap.to(s, { opacity: 0, y: 40, duration: 0.5 });
+  });
+  
+  let slide = document.getElementById("slide" + n);
+  gsap.fromTo(slide, 
+    { opacity: 0, y: 40 }, 
+    { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+  );
+}
+
+function nextSlide() {
+  if (currentSlide < 5) {
+    currentSlide++;
+    showSlide(currentSlide);
+  }
+}
+
+function restart() {
+  currentSlide = 1;
+  showSlide(currentSlide);
+}
+
+// Particle system
+const canvas = document.getElementById('particlesCanvas');
+const ctx = canvas.getContext('2d');
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+class Particle {
+  constructor() {
+    this.reset();
+  }
+
+  reset() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.vx = (Math.random() - 0.5) * 0.5;
+    this.vy = (Math.random() - 0.5) * 0.5;
+    this.alpha = Math.random() * 0.5;
+    this.size = Math.random() * 2;
+  }
+
+  update() {
+    this.x += this.vx;
+    this.y += this.vy;
+
+    if (this.x < 0 || this.x > canvas.width || 
+        this.y < 0 || this.y > canvas.height) {
+      this.reset();
+    }
+  }
+
+  draw() {
+    ctx.fillStyle = `rgba(0, 234, 255, ${this.alpha})`;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+const particles = Array.from({ length: 100 }, () => new Particle());
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
+  particles.forEach(particle => {
+    particle.update();
+    particle.draw();
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+</body>
+</html>

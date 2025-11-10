@@ -1,0 +1,16 @@
+2025-11-10T06:35:51.9520786+01:00 - === RUN STARTED ===
+2025-11-10T06:35:51.9898461+01:00 - Compress=True Keep=1 Render=True DryRun=True
+2025-11-10T06:35:52.0667973+01:00 - [DRYRUN] Write -> \wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\frames\epic\frame_01_angola_map.svg
+2025-11-10T06:35:52.0946419+01:00 - [DRYRUN] Write -> \wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\frames\epic\frame_02_circuits.svg
+2025-11-10T06:35:52.1216284+01:00 - [DRYRUN] Write -> \wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\frames\epic\frame_03_hud_overlays.svg
+2025-11-10T06:35:52.1505474+01:00 - [DRYRUN] Write -> \wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\frames\epic\frame_04_focus_luanda.svg
+2025-11-10T06:35:52.2299154+01:00 - [OK] Backup saved: \wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\backups\epic_20251110_063552.zip
+2025-11-10T06:36:18.3032750+01:00 - === RUN STARTED ===
+2025-11-10T06:36:18.3479202+01:00 - Compress=True Keep=1 Render=True DryRun=True
+2025-11-10T06:36:18.3971771+01:00 - [DRYRUN] Write -> \wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\frames\epic\frame_01_angola_map.svg
+2025-11-10T06:36:18.4289099+01:00 - [DRYRUN] Write -> \wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\frames\epic\frame_02_circuits.svg
+2025-11-10T06:36:18.4544636+01:00 - [DRYRUN] Write -> \wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\frames\epic\frame_03_hud_overlays.svg
+2025-11-10T06:36:18.4865867+01:00 - [DRYRUN] Write -> \wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\frames\epic\frame_04_focus_luanda.svg
+2025-11-10T06:36:18.5344916+01:00 - [OK] Backup saved: \wsl$\Ubuntu\home\truman\dev\sila-showcase\SILA-presentation\backups\epic_20251110_063618.zip
+2025-11-10T06:36:18.6297555+01:00 - [RENDER] Invoking render_all.sh...
+2025-11-10T06:36:18.6564785+01:00 - === RUN COMPLETE ===

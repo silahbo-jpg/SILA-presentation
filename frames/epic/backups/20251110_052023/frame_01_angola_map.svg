@@ -1,0 +1,40 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradAnim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF0000">
+        <animate attributeName="stop-color" values="#FF0000;#FFD700;#FF0000" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FFD700">
+        <animate attributeName="stop-color" values="#FFD700;#FF0000;#FFD700" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <style>
+      .city { fill: #00FFC0; }
+      .pulse { animation: pulse 2s infinite; }
+      @keyframes pulse { 0% { r: 20; } 50% { r: 35; } 100% { r: 20; } }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#gradAnim)"/>
+
+  <!-- Angola outline simplified -->
+  <path d="M400,200 L1600,200 L1500,800 L500,800 Z" fill="#000000" opacity="0.2"/>
+
+  <!-- Cities with pulses -->
+  <circle cx="500" cy="400" r="20" class="city pulse"/>
+  <circle cx="1000" cy="600" r="20" class="city pulse"/>
+  <circle cx="1400" cy="500" r="20" class="city pulse"/>
+
+  <!-- Connecting lines -->
+  <line x1="500" y1="400" x2="1000" y2="600" stroke="#FFFFFF" stroke-width="3">
+    <animate attributeName="stroke-dashoffset" from="0" to="1000" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <line x1="1000" y1="600" x2="1400" y2="500" stroke="#FFFFFF" stroke-width="3">
+    <animate attributeName="stroke-dashoffset" from="0" to="1000" dur="4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Title -->
+  <text x="50%" y="100" font-size="80" fill="#FFFFFF" font-family="Arial" text-anchor="middle">
+    SILA System - Angola Digital
+  </text>
+</svg>

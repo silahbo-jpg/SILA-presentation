@@ -1,0 +1,22 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#001F3F"/>
+  
+  <!-- Circuit lines animated -->
+  <line x1="200" y1="300" x2="1720" y2="300" stroke="#FFD700" stroke-width="4" stroke-dasharray="20,20">
+    <animate attributeName="stroke-dashoffset" values="0;1000" dur="4s" repeatCount="indefinite"/>
+  </line>
+  <line x1="200" y1="700" x2="1720" y2="700" stroke="#FF0000" stroke-width="4" stroke-dasharray="20,20">
+    <animate attributeName="stroke-dashoffset" values="0;1000" dur="5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Pulsing central node -->
+  <circle cx="960" cy="540" r="40" fill="#00FF80">
+    <animate attributeName="r" values="40;60;40" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Dynamic text -->
+  <text x="50%" y="540" font-size="70" fill="#FFFFFF" font-family="Arial" text-anchor="middle" opacity="0">
+    Orquestração de Dados Críticos
+    <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite"/>
+  </text>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "name": "sila-presentation-tools",
+  "version": "1.0.0",
+  "description": "Utilities to generate and export SILA presentation assets (video prompt automation, export to MP4)",
+  "type": "module",
+  "scripts": {
+    "generate-video": "node generate_video.js",
+    "export-frames": "node puppeteer_export.js",
+    "check-env": "node scripts/check_env.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "node-fetch": "^2.6.7",
+    "puppeteer": "^21.11.0",
+    "puppeteer-core": "^24.29.1"
+  }
+}
