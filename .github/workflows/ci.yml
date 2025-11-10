@@ -43,3 +43,16 @@ jobs:
         run: |
           Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
           ./scripts/tests/smoke.ps1
+  video-linux:
+    name: Video pipeline test (SHORT_RUN)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm ci
+      - name: Run SHORT_RUN video generation
+        run: SHORT_RUN=1 node generate_video.js epic
